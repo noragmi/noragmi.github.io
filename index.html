@@ -1,84 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Nora Alidan | Portfolio</title>
+
 <style>
     body {
-        font-family: "Inter", Arial, sans-serif;
         margin: 0;
-        background: #0d0d0d;
-        color: #e8e8e8;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
+        padding: 0;
+        font-family: "Inter", Arial, sans-serif;
+        background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+        color: white;
         text-align: center;
-        padding: 20px;
-    }
-
-    .container {
-        max-width: 600px;
-        animation: fadeIn 1.3s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     h1 {
-        font-size: 40px;
-        font-weight: 700;
+        font-size: 3rem;
         margin-bottom: 10px;
     }
 
-    h2 {
-        color: #b8b8b8;
-        font-size: 18px;
-        font-weight: 400;
-        margin-bottom: 25px;
+    .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        opacity: 0.8;
     }
 
-    p {
-        color: #cfcfcf;
-        margin-bottom: 35px;
-        font-size: 16px;
-        line-height: 1.6;
+    .buttons {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
     }
 
-    .buttons a {
-        display: inline-block;
-        background: #6a33ff;
-        padding: 12px 24px;
-        margin: 7px;
-        border-radius: 8px;
+    .btn {
         text-decoration: none;
         color: white;
-        font-size: 15px;
-        transition: 0.25s;
+        background: #34d399;
+        padding: 10px 18px;
+        border-radius: 6px;
+        transition: 0.3s;
+        font-weight: 500;
     }
 
-    .buttons a:hover {
-        background: #5226cc;
-        transform: translateY(-3px);
+    .btn:hover {
+        background: #22b67a;
+        transform: scale(1.05);
     }
+
 </style>
 </head>
 
 <body>
-<div class="container">
-    <h1>Hello, I'm <span style="color:#b285ff;">Nora Alidan</span> 👋</h1>
-    <h2>Junior Developer</h2>
 
-    <p>I enjoy building projects, solving problems, and learning modern technologies.  
-    Coding is my craft and curiosity is my fuel 💻✨</p>
+    <h1>Hello, I'm <span style="color:#34d399;">Nora Alidan</span> 👋</h1>
+    <p class="subtitle">Junior Developer | Passionate about coding & learning ✨</p>
+    <p>I love building projects and exploring new technologies 💻✨</p>
 
     <div class="buttons">
-        <a href="https://github.com/noragmi" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/nora-alidan-606b53bb" target="_blank">LinkedIn</a>
-        <a href="mailto:noragm11@gmail.com">Email</a>
+        <a href="https://github.com/noragmi" class="btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/nora-alidan-606b53bb" class="btn">LinkedIn</a>
+        <a href="mailto:noragm11@gmail.com" class="btn">Email</a>
+        <a href="todo.html" class="btn">To-Do List</a>
     </div>
-</div>
+
 </body>
 </html>
