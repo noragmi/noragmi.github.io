@@ -1,106 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nora Alidan | Portfolio</title>
-  <style>
-    :root{
-      --bg:#0d1117; --panel:#161b22; --text:#e6edf3; --muted:#8b949e;
-      --brand:#2ea043; --brand2:#238636; --line:#30363d;
+<meta charset="UTF-8">
+<title>Nora Alidan | Portfolio</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        background: linear-gradient(135deg, #ffdaf2, #ffc2e8, #ffb3e0);
+        color: #4a004f;
+        padding: 80px 20px;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0; font-family: ui-sans-serif, system-ui, Arial, Helvetica, sans-serif;
-      background: var(--bg); color: var(--text);
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
     }
-    .wrap{max-width:900px; margin:0 auto; padding:24px}
-    header{
-      padding:64px 0 32px; text-align:center;
+
+    h2 {
+        font-size: 20px;
+        font-weight: normal;
+        margin-bottom: 30px;
     }
-    nav{display:flex; gap:10px; justify-content:center; flex-wrap:wrap}
-    nav a{
-      color:var(--text); text-decoration:none; padding:8px 12px; border:1px solid var(--line);
-      border-radius:8px; font-size:14px;
+
+    .buttons {
+        margin-top: 30px;
     }
-    nav a:hover{border-color:var(--brand)}
-    .hero h1{font-size:44px; margin:10px 0}
-    .hero p{color:var(--muted); margin:8px 0 0}
-    .btns{margin-top:18px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap}
-    .btn{
-      background:var(--brand2); color:#fff; padding:10px 16px; border-radius:8px; text-decoration:none;
-      display:inline-block; font-weight:600;
+
+    a {
+        text-decoration: none;
+        background: #ff5fc8;
+        padding: 12px 25px;
+        margin: 7px;
+        border-radius: 8px;
+        color: white;
+        display: inline-block;
+        font-size: 15px;
+        transition: 0.3s;
     }
-    .btn:hover{background:var(--brand)}
-    section{margin:40px 0}
-    h2{margin:0 0 16px; font-size:26px}
-    .panel{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px}
-    .grid{display:grid; gap:14px}
-    @media(min-width:720px){ .grid{grid-template-columns: repeat(2,1fr);} }
-    .card{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px}
-    .card h3{margin:0 0 6px}
-    .meta{color:var(--muted); font-size:14px}
-    ul.tags{list-style:none; padding:0; margin:10px 0 0; display:flex; flex-wrap:wrap; gap:6px}
-    ul.tags li{border:1px solid var(--line); border-radius:999px; padding:4px 10px; font-size:12px; color:var(--muted)}
-    footer{border-top:1px solid var(--line); color:var(--muted); text-align:center; padding:24px 0; margin-top:40px}
-  </style>
+
+    a:hover {
+        background: #d94fa9;
+        transform: scale(1.06);
+    }
+</style>
 </head>
+
 <body>
-  <div class="wrap">
 
-    <!-- NAV -->
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<h1>Hello, I'm <b>Nora Alidan</b> 🌸</h1>
+<h2>Junior Developer | Passionate about coding & learning</h2>
+<p>I love building projects and exploring new technologies 💻✨</p>
 
-    <!-- HERO -->
-    <header class="hero">
-      <h1>Hello, I’m <strong>Nora Alidan</strong> 👋</h1>
-      <p>Junior Developer • Passionate about coding, problem-solving, and continual learning.</p>
-      <div class="btns">
-        <a class="btn" href="https://github.com/noragmi" target="_blank">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-        <a class="btn" href="mailto:your.email@example.com">Email</a>
-      </div>
-    </header>
+<div class="buttons">
+    <a href="https://github.com/noragmi" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/nora-alidan-606b53bb" target="_blank">LinkedIn</a>
+    <a href="mailto:noragm11@gmail.com">Email</a>
+</div>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>About</h2>
-      <div class="panel">
-        <p>
-          I love building simple, useful projects and exploring new technologies.
-          Currently learning web development and improving my problem-solving skills through hands-on practice.
-        </p>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="panel">
-        <ul class="tags">
-          <li>HTML</li><li>CSS</li><li>JavaScript (basics)</li>
-          <li>Git & GitHub</li><li>Problem Solving</li><li>Teamwork</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>My_Project</h3>
-          <p class="meta">First repo on GitHub — README and basic workflow.</p>
-          <ul class="tags"><li>Git</li><li>Markdown</li></ul>
-          <p><a class="btn" href="https://github.com/noragmi/My_Project" target="_blank">View Repo</a></p>
-        </div>
-
-        <div class="card">
-          <h3>Portfolio Website</h3>
-          <p class="meta">This site! Built with clean HTML/CSS and hosted on GitHub Pages.</p>
-          <ul class="tags"><li>HTML</li><li>CSS</li><li>GitHub Pages</li></ul>
+</body>
+</html>
